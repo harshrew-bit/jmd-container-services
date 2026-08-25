@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b91c1c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='6' width='20' height='12' rx='2'/><path d='M7 6v12'/><path d='M12 6v12'/><path d='M17 6v12'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JMD Container Services | Custom Shipping Container Solutions</title>
+    <meta name="description" content="JMD Container Services - Raw shipping container sales, container modifications, and custom-fabricated container solutions built around your exact requirements." />
+    <meta name="keywords" content="shipping containers, container modification, customized container solutions, container office, site cabins, storage containers" />
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JMD Container Services | Custom Container Solutions" />
+    <meta property="og:description" content="Tell us what you need. We build the container solution around your requirements. Raw containers, modifications, and custom builds." />
+    <meta name="theme-color" content="#b91c1c" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Anti-FOUC Theme Pre-initialization -->
+    <script>
+      try {
+        const storedTheme = localStorage.getItem('jmd_theme');
+        if (storedTheme === 'light') {
+          document.documentElement.classList.remove('dark');
+        } else if (storedTheme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+          document.documentElement.classList.remove('dark');
+        } else {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (_) {}
+    </script>
+  </head>
+  <body class="bg-white dark:bg-charcoal-950 text-charcoal-900 dark:text-charcoal-100 font-sans antialiased selection:bg-brand-700 selection:text-white transition-colors duration-150">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
