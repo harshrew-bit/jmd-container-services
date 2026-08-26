@@ -92,14 +92,30 @@ export const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center group">
-
+            <Link
+              to="/"
+              className="flex items-center gap-3 shrink-0"
+            >
+              {/* Logo Image */}
               <img
-                src={jmdLogo}
+                src={ jmdLogo}
                 alt="JMD Container Services"
-                className="h-14 sm:h-16 w-auto object-contain"
+                className="h-14 w-14 object-contain"
               />
 
+              {/* Business Name */}
+              <div className="flex flex-col leading-tight whitespace-nowrap">
+                <span className="font-display text-lg sm:text-xl font-extrabold tracking-tight text-charcoal-950 dark:text-white">
+                  JMD{' '}
+                  <span className="text-brand-700 dark:text-brand-500">
+                    CONTAINER
+                  </span>
+                </span>
+
+                <span className="text-[10px] sm:text-xs font-mono uppercase tracking-widest text-charcoal-500 dark:text-charcoal-400">
+                  SERVICES
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Navigation Links */}
