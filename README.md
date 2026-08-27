@@ -42,6 +42,7 @@ A web application for JMD Container Services, built with React, TypeScript, and 
 - `npm run dev`: Starts the development server.
 - `npm run build`: Builds the application for production.
 - `npm run preview`: Previews the production build locally.
+- `npm test`: Runs the test suite (currently not configured).
 
 ## Project Structure
 
